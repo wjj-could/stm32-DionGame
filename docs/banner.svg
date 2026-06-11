@@ -1,0 +1,98 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="50%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e94560"/>
+      <stop offset="100%" stop-color="#ff6b6b"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="200" rx="16" fill="url(#bg)"/>
+
+  <!-- Pixel grid background -->
+  <g opacity="0.08">
+    <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="none" stroke="#fff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="800" height="200" fill="url(#grid)" rx="16"/>
+  </g>
+
+  <!-- Dino pixel art -->
+  <g transform="translate(80,50)" filter="url(#glow)">
+    <!-- Dino body - pixel style -->
+    <rect x="0" y="40" width="8" height="8" fill="#4ecca3"/>
+    <rect x="8" y="32" width="8" height="16" fill="#4ecca3"/>
+    <rect x="16" y="24" width="8" height="24" fill="#4ecca3"/>
+    <rect x="24" y="16" width="8" height="32" fill="#4ecca3"/>
+    <rect x="32" y="16" width="8" height="32" fill="#4ecca3"/>
+    <rect x="40" y="24" width="8" height="24" fill="#4ecca3"/>
+    <rect x="48" y="24" width="8" height="16" fill="#4ecca3"/>
+    <rect x="56" y="16" width="8" height="16" fill="#4ecca3"/>
+    <rect x="64" y="16" width="8" height="24" fill="#4ecca3"/>
+    <!-- Eye -->
+    <rect x="64" y="16" width="4" height="4" fill="#fff"/>
+    <!-- Mouth -->
+    <rect x="72" y="16" width="8" height="4" fill="#4ecca3"/>
+    <rect x="64" y="8" width="16" height="4" fill="#4ecca3"/>
+    <!-- Legs -->
+    <rect x="16" y="56" width="8" height="12" fill="#393e46"/>
+    <rect x="40" y="56" width="8" height="8" fill="#393e46"/>
+    <!-- Tail -->
+    <rect x="-16" y="32" width="8" height="8" fill="#4ecca3"/>
+    <rect x="-24" y="40" width="8" height="8" fill="#4ecca3"/>
+    <rect x="-24" y="24" width="8" height="8" fill="#4ecca3"/>
+  </g>
+
+  <!-- Cactus -->
+  <g transform="translate(300, 60)">
+    <rect x="0" y="0" width="8" height="64" rx="4" fill="#4ecca3"/>
+    <rect x="8" y="8" width="16" height="8" rx="2" fill="#4ecca3"/>
+    <rect x="-8" y="16" width="16" height="8" rx="2" fill="#4ecca3"/>
+    <rect x="8" y="32" width="12" height="8" rx="2" fill="#4ecca3"/>
+  </g>
+
+  <!-- Bird -->
+  <g transform="translate(420, 30)" fill="#e94560">
+    <rect x="0" y="8" width="8" height="8"/>
+    <rect x="8" y="4" width="16" height="4"/>
+    <rect x="8" y="12" width="24" height="4"/>
+    <rect x="32" y="8" width="8" height="4"/>
+    <rect x="24" y="0" width="8" height="4"/>
+    <!-- Wing -->
+    <rect x="0" y="0" width="24" height="4"/>
+    <rect x="-4" y="0" width="4" height="12"/>
+    <!-- Eye -->
+    <rect x="4" y="4" width="4" height="4" fill="#fff"/>
+  </g>
+
+  <!-- Ground line -->
+  <rect x="0" y="130" width="800" height="2" fill="#4ecca3" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="165" text-anchor="middle" font-family="Consolas, monospace" font-size="42" font-weight="bold" fill="#4ecca3" filter="url(#glow)">
+    STM32 DinoGame
+  </text>
+  <text x="400" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#a0a0b0" opacity="0.8">
+    Embedded Chrome Dino Game on STM32F103C8T6 | 嵌入式小恐龙游戏
+  </text>
+
+  <!-- Styled STM32 chip icon -->
+  <g transform="translate(560,40)">
+    <rect x="0" y="0" width="48" height="48" rx="4" fill="#0f3460" stroke="#4ecca3" stroke-width="2"/>
+    <rect x="8" y="8" width="32" height="12" rx="2" fill="#2d5a9e"/>
+    <rect x="8" y="24" width="8" height="8" rx="1" fill="#4ecca3" opacity="0.5"/>
+    <rect x="20" y="24" width="8" height="8" rx="1" fill="#4ecca3" opacity="0.5"/>
+    <rect x="32" y="24" width="8" height="8" rx="1" fill="#4ecca3" opacity="0.5"/>
+    <rect x="8" y="36" width="8" height="4" rx="1" fill="#e94560" opacity="0.6"/>
+    <rect x="20" y="36" width="8" height="4" rx="1" fill="#e94560" opacity="0.6"/>
+    <rect x="32" y="36" width="8" height="4" rx="1" fill="#e94560" opacity="0.6"/>
+  </g>
+</svg>

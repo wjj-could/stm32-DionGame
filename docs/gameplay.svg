@@ -1,0 +1,89 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="400" rx="12" fill="url(#bg2)"/>
+
+  <!-- Main OLED 128x64 -->
+  <g transform="translate(40,40)">
+    <rect x="0" y="0" width="384" height="192" rx="8" fill="#000"/>
+    <rect x="-8" y="-8" width="400" height="208" rx="12" fill="none" stroke="#333" stroke-width="2"/>
+
+    <!-- OLED Screen Content - 128x64 scaled 3x -->
+    <g transform="scale(3)">
+
+      <!-- Score area -->
+      <rect x="48" y="0" width="12" height="8" fill="#111"/>
+      <text x="52" y="6" font-family="monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">HI:00420</text>
+      <text x="111" y="6" font-family="monospace" font-size="8" fill="#1a1a1a" text-anchor="middle">0086</text>
+      <text x="2" y="6" font-family="monospace" font-size="8" fill="#1a1a1a">T:25C</text>
+
+      <!-- Ground line -->
+      <line x1="0" y1="52" x2="128" y2="52" stroke="#222" stroke-width="1"/>
+
+      <!-- Dino (running pose) -->
+      <g fill="#1a1a1a">
+        <!-- Head -->
+        <rect x="24" y="28" width="8" height="8"/>
+        <rect x="32" y="24" width="4" height="4"/> <!-- snout -->
+        <!-- Eye -->
+        <rect x="28" y="28" width="4" height="4" fill="#000"/>
+        <!-- Body -->
+        <rect x="16" y="36" width="16" height="8"/>
+        <rect x="8" y="44" width="16" height="8"/>
+        <!-- Legs -->
+        <rect x="8" y="52" width="8" height="12"/>
+        <rect x="20" y="52" width="8" height="8"/>
+        <!-- Tail -->
+        <rect x="0" y="40" width="8" height="12"/>
+        <rect x="-4" y="36" width="8" height="4"/>
+      </g>
+
+      <!-- Cactus (category 1) -->
+      <g fill="#1a1a1a">
+        <rect x="88" y="32" width="8" height="20" rx="2"/>
+        <rect x="84" y="36" width="16" height="8" rx="2"/>
+        <rect x="92" y="24" width="16" height="8" rx="2"/>
+      </g>
+
+      <!-- Small cactus -->
+      <g fill="#222">
+        <rect x="108" y="44" width="8" height="8" rx="2"/>
+        <rect x="104" y="48" width="16" height="4" rx="2"/>
+      </g>
+
+      <!-- Ground dots -->
+      <circle cx="10" cy="62" r="1" fill="#111"/>
+      <circle cx="30" cy="62" r="1" fill="#111"/>
+      <circle cx="60" cy="62" r="1" fill="#111"/>
+      <circle cx="80" cy="62" r="1" fill="#111"/>
+      <circle cx="100" cy="62" r="1" fill="#111"/>
+    </g>
+
+    <!-- Label -->
+    <text x="192" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#4ecca3" opacity="0.7">1.3" OLED (128×64) — Main Game Display</text>
+  </g>
+
+  <!-- Secondary OLED 128x32 -->
+  <g transform="translate(460, 120)">
+    <rect x="0" y="0" width="160" height="60" rx="4" fill="#000"/>
+    <rect x="-4" y="-4" width="168" height="68" rx="6" fill="none" stroke="#333" stroke-width="1.5"/>
+
+    <g transform="scale(1.25)">
+      <text x="2" y="8" font-family="monospace" font-size="6" fill="#1a1a1a">Score: 0086</text>
+      <text x="2" y="16" font-family="monospace" font-size="6" fill="#1a1a1a">High:  00420</text>
+      <text x="2" y="24" font-family="monospace" font-size="6" fill="#1a1a1a">Temp:  25C</text>
+    </g>
+
+    <text x="80" y="78" text-anchor="middle" font-family="Arial" font-size="10" fill="#4ecca3" opacity="0.7">0.91" OLED — Info Display</text>
+  </g>
+
+  <!-- Buzzer Icon -->
+  <g transform="translate(480, 70)">
+    <text x="0" y="0" font-family="Arial" font-size="11" fill="#e94560" opacity="0.8">🎵 Buzzer</text>
+  </g>
+</svg>
