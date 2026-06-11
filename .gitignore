@@ -1,0 +1,36 @@
+﻿# Keil MDK build outputs
+MDK-ARM/DinoGame/
+MDK-ARM/RTE/
+
+# Keil user-specific settings
+*.uvguix.*
+*.scvd
+
+# JLink
+JLinkLog.txt
+JLinkSettings.ini
+
+# CubeMX generated
+.mxproject
+
+# Compiled objects and listings
+*.o
+*.d
+*.crf
+*.dep
+*.bak
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.htm
+*.lnp
+*.lst
+*.iex
+*.sct
+*.build_log.htm
+
+# IDE temp
+*.uvoptx
+*.uvguix.*
