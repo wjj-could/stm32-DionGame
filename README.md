@@ -253,8 +253,8 @@ DinoGame/
 
 ### Prerequisites | 环境要求
 
-- **Keil MDK-ARM** v5.0+ (with STM32F1 device pack)
-- **STM32CubeMX** v6.6+ (for code regeneration)
+- **Keil MDK-ARM** v5.0（带有STM32F1设备包）
+- **STM32CubeMX** v6.6（用于代码再生）
 - **ST-Link Utility** or any SWD programmer | 或任意 SWD 烧录器
 
 ### Build Steps | 编译步骤
@@ -264,7 +264,7 @@ DinoGame/
 3. Connect ST-Link to the Blue Pill SWD pins (SWCLK → PA14, SWDIO → PA13)
 4. Click **Download** (F8) to flash
 
-```bash
+”“bash
 # Alternative: clean build artifacts | 清理构建文件
 .\kill_keil.bat
 ```
@@ -299,22 +299,14 @@ If you need to modify pin assignments or peripheral settings:
   <img src="docs/wiring.svg" alt="Wiring Diagram" width="80%" />
 </p>
 
-> 💡 **Tip:** Replace the SVG mockups above with actual photos of your hardware setup for a more impressive README!
-> **提示：** 将上方 SVG 示意图替换为实际硬件照片，让 README 更加出彩！
 
----
 
-## 📄 License | 许可证
-
-MIT License. See [LICENSE](LICENSE) for details.
-
----
 
 <div align="center">
 
-**Made with ❤️ for the love of embedded systems**
 
-*用对嵌入式的热爱打造*
+
+
 
 </div>
 
